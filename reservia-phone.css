@@ -1,0 +1,283 @@
+
+/*! *******************************************************************************/
+/*! ***************************** GLOBAL ******************************************/
+/*! *******************************************************************************/
+
+
+section{margin: 20px;}
+
+
+/*! *******************************************************************************/
+/*! ***************************** HEADER ******************************************/
+/*! *******************************************************************************/
+
+.header,
+.onglet,
+.inscription,
+.logo-site {
+  display: none;
+}
+
+.header_responsive,.logo-site-responsive{
+  display: block;
+  
+}
+
+.bandeau-header{
+  vertical-align: center;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* taille et marge du logo */
+.logo-site-responsive{
+  width: 90px;
+  height: 45px;
+  margin: 30px 40px 20px 20px;
+}
+
+/* mise en page de la navigation et du survol de la navigation */
+
+#navigation-responsive {
+  width: 100%;
+  margin-bottom: 25px;
+  display: flex;
+}
+
+.liste-responsive {
+  width: 100%;
+  padding: 0;
+  display: flex;
+}
+
+.onglet-responsive {
+  display: inline-block;
+  height: 40px;
+  text-align: center;
+
+  border-bottom: 3px solid #f2f2f2;
+  width: 50%;
+}
+
+.onglet-responsive:hover {
+  display: inline-block;
+  height: 40px;
+  text-align: center;
+  color: #0065fc;
+  border-bottom: 3px solid #0065fc;
+  width: 50%;
+}
+
+.inscription-responsive {
+  color: #0065fc;
+  font-family: "Raleway-Bold";
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  height: 100%;
+  margin: 30px 20px 20px 20px;
+}
+
+
+
+
+.logo-localisation{width: 50px;}
+
+.conteneur-barre{height:50px;}
+  
+.bouton-rechercher{display:none;}
+    
+.zone-texte-recherche{
+    border-radius:0px 16px 16px 0px;
+    width:250px;
+    height:50px
+}
+    
+.bouton-rechercher-responsive{
+    display: flex;
+    width: 50px;
+    position:absolute;
+    right:0;
+    height:50px;
+}
+    
+.envoyer-responsive{
+    border:none;
+    background-color: #0065FC;
+    width: 100%;
+    border-radius: 16px;
+    color:white;
+    font-size: 16px;
+}
+
+#information{margin: 20px;}
+/*! *********************hebergements**************************** */
+
+#hebergements-a-marseille{border-radius: 0; background-color: white;}
+
+.titre-hebergements-marseille{
+    width: 100%;
+    margin:40px 0px 10px 30px;
+    font-family: "Raleway-Medium";
+    font-size: 20px;
+    
+}
+
+
+.afficher-plus{
+    width: 100%; 
+    margin: 30px 20px 20px 30px;
+
+}
+
+.afficher-plus h4{
+    font-family: "Raleway-Black";
+}
+
+
+.galerie-hebergements{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* DIV PRINCIPALE (l'image sera en background)*/
+.carte{
+    border: 6px solid white;
+    border-radius: 20px;
+    margin: 10px;
+    min-width: 330px;
+    min-height: 220px;
+    width: 330px;
+    height: 220px;
+    display: flex; 
+    align-items: flex-end;
+    background-size: 340px 180px;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 10px #aaaaaa; 
+}
+
+
+.info-carte{
+    display: flex;
+    height: 40%;
+    width: 100%;
+    background-color:white;
+    flex-direction: column;  
+    justify-content: center;
+    border-radius: 0px 0px 0px 0px;
+    padding-left: 10px;
+}
+/* DIV qui contient le h6 */
+
+.titre-carte{
+    margin-bottom: 5px;
+    font-family: "Raleway-Black";
+}
+
+
+
+/* DIV qui contient le p */
+.texte-carte{
+    margin-bottom: 5px;
+}
+
+
+
+
+
+/*! ------- Les plus populaires --------------------------------------- */
+
+#populaires{
+    background-color: #f2f2f2;
+    padding: 10px 0px 10px 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    border-radius: 0;
+    
+}
+
+#galerie-pop{justify-content: center;}
+
+.carte-pop{
+    margin: 20px 0;
+    max-width: 330px; 
+    max-height: 160px;
+    width: 330px;
+    height: 160px;
+
+}
+
+.titre-populaires h2{
+    margin:40px 0px 20px 30px;
+    font-family: "Raleway-Medium";
+    font-size: 20px;
+    
+}
+
+
+
+/*! ------- activites --------------------------------------- */
+
+.titre-activites{
+    width: 100%;
+    margin: 30px 20px 20px 30px;
+}
+
+.galerie-activites{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.carte-activites{
+    
+    border-radius: 20px;
+    margin: 10px;
+    width: 330px;
+    height: 220px;
+    display: flex; 
+    align-items: flex-end;
+    background-size: 340px 180px;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 10px #aaaaaa; 
+}
+
+
+
+.carte-info-activites{
+    display: flex;
+    height: 30%;
+    width: 100%;
+    background-color:white;
+    flex-direction: column;  
+    justify-content: center;
+    border-radius: 0px 0px 20px 20px;
+    padding-left: 10px;
+}
+
+
+.carte-titre-activites{
+    margin: 10px;
+    font-family: "Raleway-Bold";
+}
+
+
+#footer{
+    display: flex;
+    padding: 20px;
+    background-color: #f2f2f2;
+    flex-wrap: wrap;
+  }
+  
+#footer div{width: 300px; line-height: 30px; margin: 10px;}
+  
+#footer div h3{margin-bottom: 15px;font-family: "Raleway-Bold";}
