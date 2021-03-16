@@ -11,109 +11,81 @@ section{margin: 20px;}
 /*! ***************************** HEADER ******************************************/
 /*! *******************************************************************************/
 
-.header,
-.onglet,
-.inscription,
-.logo-site {
-  display: none;
-}
+.header{margin-bottom: 150px;}
 
-.header_responsive,.logo-site-responsive{
-  display: block;
-  
-}
+.onglet{
+    border-bottom: 3px solid #f2F2F2;
+    width: 50%;
+    text-align: center;
+    height: 80px;
+    color: #0065fc;
 
-.bandeau-header{
-  vertical-align: center;
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-}
+  }
 
-/* taille et marge du logo */
-.logo-site-responsive{
-  width: 90px;
-  height: 45px;
-  margin: 30px 40px 20px 20px;
-}
+  .onglet:hover {
+    width: 50%;
+    border-top:none;
+    border-bottom: 3px solid #0065fc;
+    height:80px;
 
-/* mise en page de la navigation et du survol de la navigation */
+  }
 
-#navigation-responsive {
-  width: 100%;
-  margin-bottom: 25px;
-  display: flex;
-}
-
-.liste-responsive {
-  width: 100%;
-  padding: 0;
-  display: flex;
-}
-
-.onglet-responsive {
-  display: inline-block;
-  height: 40px;
-  text-align: center;
-
-  border-bottom: 3px solid #f2f2f2;
-  width: 50%;
-}
-
-.onglet-responsive:hover {
-  display: inline-block;
-  height: 40px;
-  text-align: center;
-  color: #0065fc;
-  border-bottom: 3px solid #0065fc;
-  width: 50%;
-}
-
-.inscription-responsive {
-  color: #0065fc;
-  font-family: "Raleway-Bold";
-  text-decoration: none;
-  display: inline-block;
-  text-align: center;
-  height: 100%;
-  margin: 30px 20px 20px 20px;
-}
-
-
-
-
-.logo-localisation{width: 50px;}
-
-.conteneur-barre{height:50px;}
-  
-.bouton-rechercher{display:none;}
-    
-.zone-texte-recherche{
-    border-radius:0px 16px 16px 0px;
-    width:250px;
-    height:50px
-}
-    
-.bouton-rechercher-responsive{
+  .liste-nav{
     display: flex;
-    width: 50px;
-    position:absolute;
-    right:0;
-    height:50px;
-}
-    
-.envoyer-responsive{
-    border:none;
-    background-color: #0065FC;
     width: 100%;
-    border-radius: 16px;
-    color:white;
-    font-size: 16px;
+    justify-content: space-around;
+  }
+
+  #navigation {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+
+/*! *******************************************************************************/
+/*! ************************* SECTION BARRE DE RECHERCHE  *************************/
+/*! *******************************************************************************/
+
+
+
+.envoyer{display: none;}
+
+.loupe{
+  display:block;
+  background-color: #0065FC; 
+  width: 50px; 
+  height: 50px; 
+  position: absolute; 
+  top:0; 
+  right: 0;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+
+} 
+
+.zone-texte-recherche{
+  position: relative;
+  border-radius:0px 16px 16px 0px;
+  width:250px;
+  height:50px
+
 }
+
 
 #information{margin: 20px;}
-/*! *********************hebergements**************************** */
+
+
+/*! *******************************************************************************/
+/*! ************************* SECTION HEBERGEMENTS  *******************************/
+/*! *******************************************************************************/
 
 #hebergements-a-marseille{border-radius: 0; background-color: white;}
 
@@ -145,7 +117,7 @@ section{margin: 20px;}
     justify-content: center;
 }
 
-/* DIV PRINCIPALE (l'image sera en background)*/
+
 .carte{
     border: 6px solid white;
     border-radius: 20px;
@@ -172,7 +144,7 @@ section{margin: 20px;}
     border-radius: 0px 0px 0px 0px;
     padding-left: 10px;
 }
-/* DIV qui contient le h6 */
+
 
 .titre-carte{
     margin-bottom: 5px;
@@ -181,7 +153,7 @@ section{margin: 20px;}
 
 
 
-/* DIV qui contient le p */
+
 .texte-carte{
     margin-bottom: 5px;
 }
@@ -190,7 +162,9 @@ section{margin: 20px;}
 
 
 
-/*! ------- Les plus populaires --------------------------------------- */
+/*********************************************/
+/********** les plus populaires *************/
+/********************************************/
 
 #populaires{
     background-color: #f2f2f2;
@@ -198,7 +172,6 @@ section{margin: 20px;}
     width: 100%;
     height: 100%;
     display: flex;
-    /* flex-wrap: wrap; */
     border-radius: 0;
     
 }
@@ -222,8 +195,9 @@ section{margin: 20px;}
 }
 
 
-
-/*! ------- activites --------------------------------------- */
+/*! *******************************************************************************/
+/*! ************************* SECTION ACTIVITES  **********************************/
+/*! *******************************************************************************/
 
 .titre-activites{
     width: 100%;
@@ -270,6 +244,9 @@ section{margin: 20px;}
     font-family: "Raleway-Bold";
 }
 
+/*! *******************************************************************************/
+/*! ************************* SECTION FOOTER  *************************************/
+/*! *******************************************************************************/
 
 #footer{
     display: flex;

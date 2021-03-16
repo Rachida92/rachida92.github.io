@@ -63,147 +63,58 @@ section{margin: 0px 0px 20px 30px;}
 /*! *******************************************************************************/
 
 
-/****************************/
-/********* LOGO *************/
-/****************************/
-.header_responsive,
-.bandeau-header,
-.logo-site-responsive,
-.inscription-responsive,
-.navigation-responsive,
-.liste-responsive,
-.onglet-responsive{
-  display: none;
-}
-
-.header{
+.header {
   display: flex;
-  justify-content: space-between;
-  height: 100px;
   position: relative;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-bottom: 50px;
 }
 
 .logo-site{
-  width: 90px;
-  height: 45px;
-  margin: 30px 40px 20px 20px;
-}
-
-/***********************************/
-/********** NAVIGATION *************/
-/************************************/
-
-#navigation{
-  display: flex;
-  margin-right: 150px;
-  
-}
-
-.onglet {
-  display: inline-block;
-  width: 150px;
-  height: 40px;
-  text-align: center;
-  padding-top: 50px;
-  font-size: 15px;
-
-}
-
-.onglet:hover {
-  display: inline-block;
-  width: 150px;
-  height: 50px;
-  text-align: center;
-  padding-top: 47px;
-  border-top: 3px solid #0065fc;
-  color: #0065fc;
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  width:90px;
+  height:45px;
 }
 
 .inscription {
-  display: inline-block;
-  width: 150px;
-  height: 50px;
-  text-align: center;
-  padding-top: 50px;
+  position: absolute;
+  right: 25px;
+  top: 50px;
   color: #0065fc;
   font-family: "Raleway-Bold";
-  position: absolute;
-  right: 15px;
-  top: -1px;
 }
-/*
- @media screen and (max-width: 620px) {
 
+#navigation {
+  margin-right: 100px;
+}
 
-  .header,
-  .onglet,
-  .inscription,
-  .logo-site {
-    display: none;
-  }
+.liste-nav {
+  display: flex;
+}
 
-  .header_responsive,.logo-site-responsive{
-    display: block;
-  }
+.onglet{
+  width: 150px;
+  text-align: center;
+  height: 100px;
+  padding-top: 50px;
+  font-size: 15px;
+}
 
-  .bandeau-header{
-    vertical-align: center;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-  }
+.onglet:hover{
+  width: 150px;
+  text-align: center;
+  height: 100px;
+  padding-top: 47px;
+  border-top: 3px solid #0065fc; 
+}
 
-
-  .logo-site-responsive{
-    width: 90px;
-    height: 45px;
-    margin: 30px 40px 20px 20px;
-  }
-
-
-
-  #navigation-responsive {
-    width: 100%;
-    margin-bottom: 25px;
-    display: flex;
-  }
-
-  .liste-responsive {
-    width: 100%;
-    padding: 0;
-    display: flex;
-  }
-
-  .onglet-responsive {
-    display: inline-block;
-    height: 40px;
-    text-align: center;
-
-    border-bottom: 3px solid #f2f2f2;
-    width: 50%;
-  }
-
-  .onglet-responsive:hover {
-    display: inline-block;
-    height: 40px;
-    text-align: center;
+.onglet a:hover{
     color: #0065fc;
-    border-bottom: 3px solid #0065fc;
-    width: 50%;
-  }
+}
 
-  .inscription-responsive {
-    color: #0065fc;
-    font-family: "Raleway-Bold";
-    text-decoration: none;
-    display: inline-block;
-    text-align: center;
-    height: 100%;
-    margin: 30px 20px 20px 20px;
-  }
-} 
-*/
 
 
 /*! *******************************************************************************/
@@ -245,7 +156,7 @@ section{margin: 0px 0px 20px 30px;}
     text-align: center;
 }
 
-.bouton-rechercher-responsive{display:none;}
+.loupe{display:none;}
 
 .barre-de-recherche{
     display: flex;
@@ -260,7 +171,6 @@ section{margin: 0px 0px 20px 30px;}
     padding-left: 10px;
     font-family: "Raleway-Bold";
     border-radius: 0px;
-    /* margin: auto; */
     border: 1px solid #F2F2F2;
 }
 
@@ -282,50 +192,29 @@ section{margin: 0px 0px 20px 30px;}
 /*! ***************************** SECTION FILTRES  ********************************/
 /*! *******************************************************************************/
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
 
 #filtres{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex; 
-    -webkit-box-align: center; 
-        -ms-flex-align: center; 
-            align-items: center;
     margin-bottom:20px; 
-    -ms-flex-wrap: wrap; 
-        flex-wrap: wrap; 
-     
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 #liste-filtres{
-    display:-webkit-box;
-    display:-ms-flexbox;
     display:flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    padding-top: 20px;
-    
-        
+    padding-top: 20px;  
+    flex-wrap: wrap;
 }
 
 .titre-filtre{
-    
     font-family: "Raleway-Medium";
     margin-right: 20px;
-    
-    
+
 }
 
 .filtre{
     height:45px;
     position:relative;
-    display:-webkit-box;
-    display:-ms-flexbox;
     display:flex;
     margin-right: 30px;
     margin-bottom: 20px;
@@ -337,15 +226,9 @@ section{margin: 0px 0px 20px 30px;}
     border-radius:50%;
     height:45px;
     width:45px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
 }
   
 .bouton-filtre{
@@ -405,15 +288,15 @@ section{margin: 0px 0px 20px 30px;}
 /*! *******************************************************************************/
 
 
-
-
 #hebergements{
     display: flex; 
     flex-wrap: wrap-reverse;
     width: 95%;
     margin-bottom: 30px;
 }
+
 .fa-star{font-size: 12px;}
+
 .etoile{display: inline-flex;}
 
 /***********************************************/
@@ -439,65 +322,75 @@ section{margin: 0px 0px 20px 30px;}
 
 
 
-.galerie-hebergements{
+#galerie-hebergements{
     
     display: grid;
     grid-template-columns: repeat(auto-fill, 30%);
-    grid-gap: 30px;
+    grid-column-gap: 5%;
+    grid-row-gap: 10%;
     padding: 30px;   
     justify-content: center;
+    
+ 
 }
 
 
 .afficher-plus{
-    
-    margin: 40px 0px 0px 50px;
-    font-family: "Raleway-Medium";
-    font-size: 18px;
-    
+
+    margin: 50px 0px 0px 50px;
+    font-family: "Raleway-Bold";
+    font-size: 16px;
+    display: block;
+   
 }
+
 
 .carte{
     border: 6px solid white;
     border-radius: 20px;
-    max-width: 250Px;
+    min-width: 250Px;
     max-height: 250px;
-    width: 20vw;
+    width: 18vw;
     height: 24vh;
     display: flex; 
     align-items: flex-end;
     background-size: 100% 100%;
+    background-clip:content-box;
     background-position-y: -3vh;
     background-repeat: no-repeat;
     box-shadow: 5px 5px 10px #aaaaaa; 
+
 }
 
 
- .galerie-hebergements .carte:nth-child(1){
+ #galerie-hebergements .carte:nth-child(1){
     background-image: url("ressources/Projet2-Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
     
  }
 
-
-.galerie-hebergements .carte:nth-child(2){
+#galerie-hebergements .carte:nth-child(2){
     background-image: url("ressources/Projet2-Reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");  
 }
 
-.galerie-hebergements .carte:nth-child(3){
+#galerie-hebergements .carte:nth-child(3){
     background-image: url("ressources/Projet2-Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");  
 }
 
-.galerie-hebergements .carte:nth-child(4){
+#galerie-hebergements .carte:nth-child(4){
     background-image: url("ressources/Projet2-Reservia/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");  
 }
 
-.galerie-hebergements .carte:nth-child(5){
+#galerie-hebergements .carte:nth-child(5){
     background-image: url("ressources/Projet2-Reservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");  
 }
 
-.galerie-hebergements .carte:nth-child(6){
-    background-image: url("ressources/Projet2-Reservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");  
+#galerie-hebergements .carte:nth-child(6){
+    background-image: url("ressources/Projet2-Reservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    
+
 }
+
+
 
 
 .info-carte{
@@ -511,7 +404,7 @@ section{margin: 0px 0px 20px 30px;}
     padding: 10px;
     
 }
-/* DIV qui contient le h6 */
+
 
 .titre-carte{
     margin-bottom: 5px;
@@ -521,54 +414,53 @@ section{margin: 0px 0px 20px 30px;}
 .texte-carte{
     margin-bottom: 5px;
     font-size: 14px;
-    /* line-height: 25px; */
 }
 
 
 
-.galerie-hebergements .carte:nth-child(1) .etoile :nth-child(1),
-.galerie-hebergements .carte:nth-child(1) .etoile :nth-child(2),
-.galerie-hebergements .carte:nth-child(1) .etoile :nth-child(3),
-.galerie-hebergements .carte:nth-child(1) .etoile :nth-child(4),
+#galerie-hebergements .carte:nth-child(1) .etoile :nth-child(1),
+#galerie-hebergements .carte:nth-child(1) .etoile :nth-child(2),
+#galerie-hebergements .carte:nth-child(1) .etoile :nth-child(3),
+#galerie-hebergements .carte:nth-child(1) .etoile :nth-child(4),
 
-.galerie-hebergements .carte:nth-child(2) .etoile :nth-child(1),
-.galerie-hebergements .carte:nth-child(2) .etoile :nth-child(2),
-.galerie-hebergements .carte:nth-child(2) .etoile :nth-child(3),
-.galerie-hebergements .carte:nth-child(2) .etoile :nth-child(4),
-.galerie-hebergements .carte:nth-child(2) .etoile :nth-child(5),
+#galerie-hebergements .carte:nth-child(2) .etoile :nth-child(1),
+#galerie-hebergements .carte:nth-child(2) .etoile :nth-child(2),
+#galerie-hebergements .carte:nth-child(2) .etoile :nth-child(3),
+#galerie-hebergements .carte:nth-child(2) .etoile :nth-child(4),
+#galerie-hebergements .carte:nth-child(2) .etoile :nth-child(5),
 
-.galerie-hebergements .carte:nth-child(3) .etoile :nth-child(1),
-.galerie-hebergements .carte:nth-child(3) .etoile :nth-child(2),
-.galerie-hebergements .carte:nth-child(3) .etoile :nth-child(3),
-.galerie-hebergements .carte:nth-child(3) .etoile :nth-child(4),
+#galerie-hebergements .carte:nth-child(3) .etoile :nth-child(1),
+#galerie-hebergements .carte:nth-child(3) .etoile :nth-child(2),
+#galerie-hebergements .carte:nth-child(3) .etoile :nth-child(3),
+#galerie-hebergements .carte:nth-child(3) .etoile :nth-child(4),
 
-.galerie-hebergements .carte:nth-child(4) .etoile :nth-child(1),
-.galerie-hebergements .carte:nth-child(4) .etoile :nth-child(2),
-.galerie-hebergements .carte:nth-child(4) .etoile :nth-child(3),
+#galerie-hebergements .carte:nth-child(4) .etoile :nth-child(1),
+#galerie-hebergements .carte:nth-child(4) .etoile :nth-child(2),
+#galerie-hebergements .carte:nth-child(4) .etoile :nth-child(3),
 
-.galerie-hebergements .carte:nth-child(5) .etoile :nth-child(1),
-.galerie-hebergements .carte:nth-child(5) .etoile :nth-child(2),
-.galerie-hebergements .carte:nth-child(5) .etoile :nth-child(3),
-.galerie-hebergements .carte:nth-child(5) .etoile :nth-child(4),
+#galerie-hebergements .carte:nth-child(5) .etoile :nth-child(1),
+#galerie-hebergements .carte:nth-child(5) .etoile :nth-child(2),
+#galerie-hebergements .carte:nth-child(5) .etoile :nth-child(3),
+#galerie-hebergements .carte:nth-child(5) .etoile :nth-child(4),
 
-.galerie-hebergements .carte:nth-child(6) .etoile :nth-child(1),
-.galerie-hebergements .carte:nth-child(6) .etoile :nth-child(2),
-.galerie-hebergements .carte:nth-child(6) .etoile :nth-child(3),
-.galerie-hebergements .carte:nth-child(6) .etoile :nth-child(4),
-.galerie-hebergements .carte:nth-child(6) .etoile :nth-child(5)
+#galerie-hebergements .carte:nth-child(6) .etoile :nth-child(1),
+#galerie-hebergements .carte:nth-child(6) .etoile :nth-child(2),
+#galerie-hebergements .carte:nth-child(6) .etoile :nth-child(3),
+#galerie-hebergements .carte:nth-child(6) .etoile :nth-child(4),
+#galerie-hebergements .carte:nth-child(6) .etoile :nth-child(5)
 {
     color: #0065FC;
 }
 
 
-.galerie-hebergements .carte:nth-child(1) .etoile :nth-child(5),
+#galerie-hebergements .carte:nth-child(1) .etoile :nth-child(5),
 
-.galerie-hebergements .carte:nth-child(3) .etoile :nth-child(5),
+#galerie-hebergements .carte:nth-child(3) .etoile :nth-child(5),
 
-.galerie-hebergements .carte:nth-child(4) .etoile :nth-child(4),
-.galerie-hebergements .carte:nth-child(4) .etoile :nth-child(5),
+#galerie-hebergements .carte:nth-child(4) .etoile :nth-child(4),
+#galerie-hebergements .carte:nth-child(4) .etoile :nth-child(5),
 
-.galerie-hebergements .carte:nth-child(5) .etoile :nth-child(5)
+#galerie-hebergements .carte:nth-child(5) .etoile :nth-child(5)
 {
 
     color: #DEEBFF;
@@ -619,7 +511,6 @@ section{margin: 0px 0px 20px 30px;}
 }
 
 
-/*Reprendre le bloc du dessus*/
 
 .carte-pop{
     border: 5px solid white;
@@ -661,10 +552,6 @@ section{margin: 0px 0px 20px 30px;}
 
 
 
-
-
-/* DIV qui contient le texte uniquement */
-
 .carte-pop-info{
     display: flex;
     height: 100%;
@@ -677,7 +564,6 @@ section{margin: 0px 0px 20px 30px;}
 }
 
 
-/* DIV qui contient le h6 */
 .carte-pop-titre{
     margin: 10px 10px 20px 10px;
     height: 10%;
@@ -685,13 +571,11 @@ section{margin: 0px 0px 20px 30px;}
 }
 
 
-/* DIV qui contient le p */
 .carte-pop-texte{
     margin: 10px;
     font-size: 14px;
 }
 
-/* DIV qui contient les étoiles */
 .etoile-pop{
     display: flex;
     height: 80%;
@@ -728,7 +612,7 @@ section{margin: 0px 0px 20px 30px;}
 
 
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:1350px){
 
     #hebergements-a-marseille{
         display: flex;
@@ -739,48 +623,42 @@ section{margin: 0px 0px 20px 30px;}
         margin: 0;
     }
 
-    .carte{min-width: 230px; min-height: 200px;}
+    .carte{min-width: 300px; min-height: 200px;}
 
-    .galerie-hebergements{
+    .afficher-plus{display: block; margin: 50px;}
+
+    #galerie-hebergements{
         width: 100%;
         height: 60%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center; 
-
-        /* display: grid;
-        grid-template-columns: repeat(auto-fill, 30%);
-        grid-gap: 5%;
-        padding: 30px;
-        margin: 0; */
+        grid-gap: 30px;
     }
+
     #populaires{
-        /* background-color: #f2f2f2; */
         padding: 10px 0px 10px 0px;
         min-width: 100%;
         height: 100%;
         display: flex;
-    
         flex-wrap: wrap;
-        margin: 0;
+        margin: 20px 0;
     }
 
     #galerie-pop{
 
-        /* display: grid;
-        grid-template-columns: repeat(auto-fill, 20%);
-        grid-gap:30px; */
         display: flex;
         flex-wrap: wrap;
         margin: 0 20px;
-        /* justify-content: center; */
-        
     }
 
     .carte-pop{
         margin: 20px;
     }
 }
+
+
+
 
 
 /*! *******************************************************************************/
@@ -801,7 +679,7 @@ section{margin: 0px 0px 20px 30px;}
 }
 
 
-.galerie-activites{
+#galerie-activites{
     min-height: 60vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -809,7 +687,6 @@ section{margin: 0px 0px 20px 30px;}
     grid-gap: 30px;    
 }
 
-/* DIV PRINCIPALE (l'image sera en background)*/
 .carte-activites{
     
     border-radius: 20px;
@@ -821,7 +698,7 @@ section{margin: 0px 0px 20px 30px;}
     box-shadow: 5px 5px 10px #aaaaaa; 
 }
 
-/* DIV qui contient le texte uniquement */
+
 
 .carte-info-activites{
     display: flex;
@@ -834,7 +711,7 @@ section{margin: 0px 0px 20px 30px;}
     padding-left: 10px;
     
 }
-/* DIV qui contient le h6 */
+
 
 .carte-titre-activites{
     margin: 10px;
@@ -842,7 +719,7 @@ section{margin: 0px 0px 20px 30px;}
 }
 
 
-.galerie-activites .carte-activites:nth-child(1){
+#galerie-activites .carte-activites:nth-child(1){
     background-image: url("ressources/Projet2-Reservia/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"); 
     background-size: cover;  
     grid-row: 1/7;
@@ -850,7 +727,7 @@ section{margin: 0px 0px 20px 30px;}
 }
 
 
-.galerie-activites .carte-activites:nth-child(2){
+#galerie-activites .carte-activites:nth-child(2){
     background-image: url("ressources/Projet2-Reservia/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
     background-size: cover;    
     background-position: center;
@@ -858,14 +735,14 @@ section{margin: 0px 0px 20px 30px;}
     grid-column: 2;    
 }
 
-.galerie-activites .carte-activites:nth-child(3){
+#galerie-activites .carte-activites:nth-child(3){
     background-image: url("ressources/Projet2-Reservia/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");  
     background-size: cover;    
     grid-row:5/7;
     grid-column: 2;    
 }
 
-.galerie-activites .carte-activites:nth-child(4){
+#galerie-activites .carte-activites:nth-child(4){
     background-image: url("ressources/Projet2-Reservia/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"); 
     background-size: cover;
     background-position: center;
@@ -873,14 +750,14 @@ section{margin: 0px 0px 20px 30px;}
     grid-column: 3; 
 }
 
-.galerie-activites .carte-activites:nth-child(5){
+#galerie-activites .carte-activites:nth-child(5){
     background-image: url("ressources/Projet2-Reservia/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
     background-size: cover;
     grid-row:1/4;
     grid-column: 4; 
 }
 
-.galerie-activites .carte-activites:nth-child(6){
+#galerie-activites .carte-activites:nth-child(6){
     background-image: url("ressources/Projet2-Reservia/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");  
     background-size: cover;
     grid-row:4/7;
@@ -888,6 +765,55 @@ section{margin: 0px 0px 20px 30px;}
 }
 
 
+@media screen and (max-width: 1100px){
+    
+    #activites{margin:0; width: 100%;}
+
+    .titre-activites{
+        width: 100%;
+        margin: 20px 0px 20px 40px;
+    }
+
+    #galerie-activites{
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .carte-activites{
+        
+        border-radius: 20px;
+        margin: 10px;
+        width: 310px;
+        height: 200px;
+        display: flex; 
+        align-items: flex-end;
+        background-size: 340px 180px;
+        background-repeat: no-repeat;
+        box-shadow: 5px 5px 10px #aaaaaa; 
+    }
+
+
+
+    .carte-info-activites{
+        display: flex;
+        height: 30%;
+        width: 100%;
+        background-color:white;
+        flex-direction: column;  
+        justify-content: center;
+        border-radius: 0px 0px 20px 20px;
+        padding-left: 10px;
+    }
+
+
+    .carte-titre-activites{
+        margin: 10px;
+        font-family: "Raleway-Bold";
+    }
+}
 
 
 

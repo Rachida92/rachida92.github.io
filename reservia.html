@@ -20,10 +20,9 @@
       <img class="logo-site" src="ressources/Projet2-Reservia/images/logo/Reservia@3x.png" alt="Logo du site">
   
       <nav id="navigation">
-        <ul>
+        <ul class="liste-nav">
           <li class="onglet"><a href="#hebergements">Hébergements</a></li>
           <li class="onglet"><a href="#activites">Activités</a></li>
-          <!-- <li class="inscription">S'inscrire</li> -->
         </ul>
         
       </nav>
@@ -31,23 +30,7 @@
       <a href="#" class="inscription">S'inscrire</a>
     </div>
   
-    <div class="header-responsive">
-  
-      <div class="bandeau-header">
-        <img class="logo-site-responsive" src="ressources/Projet2-Reservia/images/logo/Reservia@3x.png" alt="Logo du site">
-  
-        <a href="#" class="inscription-responsive">S'inscrire</a>
-      </div>
-  
-      <nav id="navigation-responsive">
-        <ul class="liste-responsive">
-            <li class="onglet-responsive"><a href="#hebergements">Hébergements</a></li>
-            <li class="onglet-responsive"><a href="#activites">Activités</a></li>
-        </ul>
-  
-      </nav>
-  
-    </div>
+    
   
   </header>
 
@@ -68,15 +51,19 @@
                   <i class="fas fa-map-marker-alt"></i>
                 </div>
       
-      
+      			<div>
                 <input class="zone-texte-recherche" type="text" placeholder="Marseille, France"/>
+                <span class="loupe"><i class="fas fa-search"></i></span>
+				</div>
+
       
                 <div class="bouton-rechercher">
-                    <input class="envoyer" type="submit" value="Rechercher" />
+                	<button class="envoyer">Rechercher</button>
+                    <!-- <input class="envoyer" type="submit" value="Rechercher" /> -->
                 </div>
 
                 <div class="bouton-rechercher-responsive">
-                    <button class="envoyer-responsive"><i class="fas fa-search"></i></button>
+                    
                 </div>
       
               </div>
@@ -131,11 +118,12 @@
 
             <h2 class="titre-hebergements-marseille">Hébergements à Marseille</h2>
     
-            <div class="galerie-hebergements">
+            <div id="galerie-hebergements">
 
         
                 <!-- Carte 1 Auberge de la Cannebière -->
                 <div class="carte">
+
 
                     <div class="info-carte">
 
@@ -227,6 +215,7 @@
 
                 <!-- Carte 6 Hôtel chez Amina -->
                 <div class="carte">
+
                     <div class="info-carte">
 
                         <div class="titre-carte"><h4>Hôtel chez Amina</h4></div>
@@ -335,7 +324,7 @@
 
     <h2 class="titre-activites">Activités à Marseille</h2>
       
-    <div class="galerie-activites">
+    <div id="galerie-activites">
            
             <!-- Carte 1 Auberge de la Cannebière -->
             <div class="carte-activites">

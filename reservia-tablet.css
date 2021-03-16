@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     font-family: "Raleway";
-    outline: none; /*désactive les grosses bordures noires quand on clique sur un champ de recherche ou un bouton*/
+    outline: none;
     box-sizing: border-box;
 }
 
@@ -59,17 +59,16 @@ a{text-decoration: none; color:black;}
 section{margin: 30px;}
 
 
+
 /*! *******************************************************************************/
-/*! ***************************** HEADER ******************************************/
+/*! ************************* SECTION HEBERGEMENTS  *******************************/
 /*! *******************************************************************************/
-
-
-
-
-
-/*! *********************hebergements**************************** */
 
 #hebergements{margin: 0; width: 100%;}
+
+/***********************************************/
+/********** hebergement à marseille *************/
+/************************************************/
 
 #hebergements-a-marseille{border-radius: 0; background-color: white;}
 
@@ -100,7 +99,7 @@ section{margin: 30px;}
     justify-content: center;
 }
 
-/* DIV PRINCIPALE (l'image sera en background)*/
+
 .carte{
     border: 6px solid white;
     border-radius: 20px;
@@ -127,7 +126,7 @@ section{margin: 30px;}
     border-radius: 0px 0px 0px 0px;
     padding-left: 10px;
 }
-/* DIV qui contient le h6 */
+
 
 .titre-carte{
     margin-bottom: 5px;
@@ -135,8 +134,6 @@ section{margin: 30px;}
 }
 
 
-
-/* DIV qui contient le p */
 .texte-carte{
     margin-bottom: 5px;
 }
@@ -144,8 +141,9 @@ section{margin: 30px;}
 
 
 
-
-/*! ------- Les plus populaires --------------------------------------- */
+/*********************************************/
+/********** les plus populaires *************/
+/********************************************/
 
 #populaires{
     background-color: #f2f2f2;
@@ -168,7 +166,11 @@ section{margin: 30px;}
 
 
 
-/*! ------- activites --------------------------------------- */
+
+/*! *******************************************************************************/
+/*! ************************* SECTION ACTIVITES  **********************************/
+/*! *******************************************************************************/
+
 
 #activites{margin:0; width: 100%;}
 
@@ -216,6 +218,11 @@ section{margin: 30px;}
     margin: 10px;
     font-family: "Raleway-Bold";
 }
+
+
+/*! *******************************************************************************/
+/*! ************************* SECTION FOOTER  *************************************/
+/*! *******************************************************************************/
 
 
 #footer{
