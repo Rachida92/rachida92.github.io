@@ -63,7 +63,7 @@ section{margin: 0px 0px 20px 30px;}
 /*! *******************************************************************************/
 
 
-.header {
+#site-header {
   display: flex;
   position: relative;
   flex-wrap: wrap;
